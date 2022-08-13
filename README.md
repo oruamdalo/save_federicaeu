@@ -19,5 +19,6 @@ Open in your favourite browser the course page, login and get current cookies (M
 [ ] - Automatically retrive cookies from login (now they are hardcoded)
 [ ] - Some mechanism to save already processed and downloaded courses
 [ ] - Better error management
+[ ] - Get Quiz pages (they are interactive, I don't how and if I'll do it)
 
 
