@@ -10,7 +10,6 @@ logger = logging.getLogger(__name__)
 coloredlogs.install(level='DEBUG', logger=logger)
 
 # EXAMPLE OF USAGE - NOT OPTIMIZED
-# No real logger, I'm going to put it
 scraper = Federica()
 scraper.loginCookie()
 
@@ -18,7 +17,6 @@ lectures = scraper.getCourse("https://lms.federica.eu/course/view.php?id=216")
 
 logger.info("Found {} lectures".format(len(lectures)))
 
-exit()
 for lecture in lectures:
     
     chapters = scraper.getChapters(lecture[0], lecture[1])
