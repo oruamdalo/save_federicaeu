@@ -22,7 +22,7 @@ for lecture in lectures:
     chapters = scraper.getChapters(lecture[0], lecture[1])
     chapters += [lecture[0]] # without &chapterid=ID means first page (usually contains videolecture)
     
-    folderName = "YOUR_PATH/LECTURE_{}".format(lecture[1])
+    folderName = "YOUR_PATH/LECTURE_{}/".format(lecture[1])
     os.makedirs(folderName, exist_ok=True)
     
     
